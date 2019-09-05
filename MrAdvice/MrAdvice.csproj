@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>ArxOne.MrAdvice</RootNamespace>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <AssemblyName>MrAdvice</AssemblyName>
+    <AssemblyTitle>MrAdvice</AssemblyTitle>
+    <AssemblyDescription>MrAdvice allows to weave aspects at build-time (just like PostSharp, but free as in free beer). Write your own aspects in the form of attributes and apply them to target methods or properties. This version does not require any dependency (on the opposite of MrAdvice.Fody which requires Fody).</AssemblyDescription>
+    <AssemblyCompany>ArxOne</AssemblyCompany>
+    <AssemblyProduct>Mr.Advice</AssemblyProduct>
+    <AssemblyCopyright>MIT license http://opensource.org/licenses/mit-license.php</AssemblyCopyright>
+    <DocumentationFile>bin\$(Configuration)\MrAdvice.XML</DocumentationFile>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\MrAdvice.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+
+</Project>

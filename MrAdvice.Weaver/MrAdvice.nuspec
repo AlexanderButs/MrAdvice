@@ -1,0 +1,31 @@
+<package>
+  <metadata>
+    <id>MrAdvice</id>
+    <version>2.8.5</version>
+    <title>$title$</title>
+    <authors>picrap</authors>
+    <owners></owners>
+    <licenseUrl>http://opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/ArxOne/MrAdvice</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ArxOne/MrAdvice/master/Icon/MrAdvice.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>.NET build step aspect weaver</summary>
+    <description>MrAdvice allows to weave aspects at build-time (just like PostSharp, but free as in free beer). Write your own aspects in the form of attributes and apply them to target methods or properties. This version does not require any dependency (on the opposite of MrAdvice.Fody which requires Fody).</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2015-2016 Arx One</copyright>
+    <tags>weaver aspect advice pointcut aop .net attributes injection netstandard windows silverlight sl5 postsharp</tags>
+    <developmentDependency>false</developmentDependency>
+  </metadata>
+  <files>
+    <file src="MrAdvice.targets" target="build"/>
+    <file src="bin\Release\netstandard2.0\MrAdvice.Weaver.dll" target="build"/>
+
+    <file src="..\MrAdvice\bin\Release\net461\MrAdvice.dll" target="lib\net461"/>
+    <file src="..\MrAdvice\bin\Release\net461\MrAdvice.xml" target="lib\net461"/>
+    <file src="..\MrAdvice\bin\Release\net461\MrAdvice.pdb" target="lib\net461"/>
+
+    <file src="..\MrAdvice\bin\Release\netstandard2.0\MrAdvice.dll" target="lib\netstandard2.0"/>
+    <file src="..\MrAdvice\bin\Release\netstandard2.0\MrAdvice.xml" target="lib\netstandard2.0"/>
+    <file src="..\MrAdvice\bin\Release\netstandard2.0\MrAdvice.pdb" target="lib\netstandard2.0"/>
+  </files>
+</package>

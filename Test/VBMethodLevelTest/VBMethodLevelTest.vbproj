@@ -13,7 +13,7 @@
     <AssemblyName>VBMethodLevelTest</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <ReferencePath>$(DevEnvDir)PublicAssemblies\</ReferencePath>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -86,9 +86,9 @@
     <Compile Include="BasicTest.vb" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MrAdvice.Net40\MrAdvice.Net40.csproj">
-      <Project>{D8AA6017-594D-4616-907B-B450A5D2FCB9}</Project>
-      <Name>MrAdvice.Net40</Name>
+    <ProjectReference Include="..\..\MrAdvice\MrAdvice.csproj">
+      <Project>{f8b0a4eb-daed-4dc3-976e-09036f8ee87b}</Project>
+      <Name>MrAdvice.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />

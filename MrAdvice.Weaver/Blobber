@@ -2,3 +2,5 @@
 #(Release)*: embed
 *: merge
 MrAdvice: embed
+System*: none
+Microsoft*: none

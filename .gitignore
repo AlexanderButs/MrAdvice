@@ -182,7 +182,6 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 MrAdvice/Properties/ProductInfo.cs
-MrAdvice.Weaver/MrAdvice.nuspec
 MrAdvice.Fody/References/
 MrAdvice.Fody/MrAdvice.nuspec
 *.debug
